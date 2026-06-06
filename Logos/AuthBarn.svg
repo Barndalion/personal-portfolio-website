@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="64" fill="#0F172A"></rect>
+
+  <!-- Barn roof -->
+  <path d="M96 210 L256 90 L416 210" stroke="#38BDF8" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- Barn body -->
+  <rect x="120" y="210" width="272" height="220" rx="18" stroke="#38BDF8" stroke-width="18" fill="none"></rect>
+
+  <!-- Barn door split -->
+  <line x1="256" y1="210" x2="256" y2="430" stroke="#38BDF8" stroke-width="10"></line>
+
+  <!-- Lock body (centered) -->
+  <rect x="220" y="290" width="72" height="70" rx="12" fill="#38BDF8"></rect>
+
+  <!-- Lock shackle -->
+  <path d="M238 290 V270 C238 250 274 250 274 270 V290" stroke="#38BDF8" stroke-width="12" stroke-linecap="round"></path>
+
+  <!-- Keyhole -->
+  <circle cx="256" cy="322" r="8" fill="#0F172A"></circle>
+  <rect x="252" y="322" width="8" height="18" fill="#0F172A"></rect>
+
+  <!-- Subtle “AuthBarn” mark -->
+  <text x="256" y="470" text-anchor="middle" fill="#94A3B8" font-size="28" font-family="monospace">
+    AuthBarn
+  </text>
+
+</svg>

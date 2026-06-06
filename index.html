@@ -3,97 +3,503 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Darell Barnes</title>
+    <title>Darell Barnes — Software Engineer</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- ── NAV ─────────────────────────────────────────── -->
     <header>
-       <nav>
-            <ul>
+        <nav>
+            <div class="nav-logo">DB</div>
+            <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-       </nav>
+            <a class="nav-cta" href="https://www.github.com/barndalion" target="_blank" rel="noopener">GitHub ↗</a>
+        </nav>
     </header>
 
-    <section id="home">
-        <img src="images/WhatsApp Image 2025-09-03 at 21.51.11_3896ac39.jpg" 
-             alt="Photo of Darell Barnes" width="250">
-        <p>Welcome To My Personal Portfolio Website. Here you will see all about me, the journey I have been on, and the projects I have created. I hope you enjoy your visit!</p>
+    <!-- ── HERO ─────────────────────────────────────────── -->
+    <section class="Hero" id="home">
+        <div class="hero-inner">
+            <div class="professional_image">
+                <img src="images/personal_photo.jpg" alt="Darell Barnes">
+            </div>
+            <div class="hero-text">
+                <span class="hero-eyebrow">Software Engineer</span>
+                <h1>Darell Barnes</h1>
+                <p class="misc">Building Backend Systems, Tools, and Software from Scratch</p>
+                <div class="hero-meta">
+                    <span class="Major">Computer Science · Voorhees University</span>
+                    <span class="GPA">GPA: 4.0</span>
+                </div>
+                <div class="hero_buttons">
+                    <a href="#projects-section" class="btn-primary">View Projects</a>
+                    <a href="/objects/Darell_Barnes_Official_Resume.pdf" class="btn-secondary">Download Resume</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/Barndalion" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <span class="social-divider">·</span>
+                    <a href="https://www.linkedin.com/in/darell-barnes-996109350/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    <span class="social-divider">·</span>
+                    <a href="mailto:darellbarnes450@gmail.com">Email</a>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about">
-         <h2>About Me</h2>
-         <p>I am Darell Barnes, a passionate undergraduate freshman who is always learning new things. I enjoy reading about technology and creating projects. Outside of my obsession with coding and learning, you can find me watching anime or playing games.</p>
+    <!-- ── ABOUT ─────────────────────────────────────────── -->
+    <section class="about_me" id="about">
+        <div class="section-inner">
+            <h2 class="section-title">About Me</h2>
+            <p class="about_me_text">
+                I am a Computer Science student at Voorhees University focused on software engineering, backend 
+                development, and systems programming. I enjoy building projects that deepen my understanding of 
+                how software works — from authentication systems and web applications to low-level database 
+                projects written in C. My interests include backend engineering, databases, and software 
+                architecture. Outside of technology, I enjoy reading manhwa, playing chess, exploring new ideas, 
+                and spending time with friends.
+                <br><br>
+                I am currently seeking software engineering internship opportunities where I can continue 
+                developing strong engineering fundamentals and contribute to real-world software projects.
+            </p>
+        </div>
     </section>
 
-   <section id="projects-section">
-    <h2>Projects</h2>
-    
-    <div class="projects-container">
-        <div class="project">
-            <h3>BarnesDB</h3>
-            <img src="images/BarnesDB.png" alt="Screenshot of BarnesDB project" width="300">
-            <a href="https://github.com/Barndalion/BarnesDB" target="_blank">View on GitHub</a>
-            <p>A lightweight database with its own query language. Uses text files as the main storage medium and includes parsing logic.</p>
-        </div>
+    <!-- ── SKILLS ─────────────────────────────────────────── -->
+    <section class="Technical_Skills" id="skills">
+        <div class="section-inner">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
 
-        <div class="project">
-            <h3>AuthBarn</h3>
-            <img src="images/AuthBarn.png" alt="Screenshot of AuthBarn project" width="300">
-            <a href="https://github.com/Barndalion/AuthBarn" target="_blank">View on GitHub</a>
-            <p>A role-based management and authentication module, packaged for easy integration into other scripts.</p>
-        </div>
+                <div class="skill-card languages">
+                    <p class="skill-card-heading lang_heading">Languages</p>
+                    <div class="lan_container"><img src="/Logos/python.svg" alt="Python"><p>Python</p></div>
+                    <div class="lan_container"><img src="/Logos/C.svg" alt="C"><p>C</p></div>
+                    <div class="lan_container"><img src="/Logos/HTML.svg" alt="HTML"><p>HTML</p></div>
+                    <div class="lan_container"><img src="/Logos/css.svg" alt="CSS"><p>CSS</p></div>
+                    <div class="lan_container"><img src="/Logos/javascript.svg" alt="JavaScript"><p>JavaScript</p></div>
+                </div>
 
-        <div class="project">
-            <h3>Finance Tracker</h3>
-            <img src="images/Finance-tracker.png" alt="Screenshot of Finance Tracker project" width="300">
-            <a href="https://github.com/Barndalion/Finance-tracker" target="_blank">View on GitHub</a>
-            <p>A Flask website to track daily expenses, automatically update balances, and show savings progress.</p>
-        </div>
+                <div class="skill-card frameworks">
+                    <p class="skill-card-heading">Frameworks & Libraries</p>
+                    <div class="fram_container"><img src="/Logos/AuthBarn.svg" alt="AuthBarn"><p>AuthBarn</p></div>
+                    <div class="fram_container"><img src="/Logos/fastapi.svg" alt="FastAPI"><p>FastAPI</p></div>
+                    <div class="fram_container"><img src="/Logos/flask.svg" alt="Flask"><p>Flask</p></div>
+                    <div class="fram_container"><img src="/Logos/gunicorn.svg" alt="Gunicorn"><p>Gunicorn</p></div>
+                    <div class="fram_container"><img src="/Logos/htmx.svg" alt="HTMX"><p>HTMX</p></div>
+                    <div class="fram_container"><img src="/Logos/jsonwebtokens.svg" alt="PyJWT"><p>PyJWT</p></div>
+                    <div class="fram_container"><img src="/Logos/tk.svg" alt="Tkinter"><p>Tkinter</p></div>
+                </div>
 
-        <div class="project">
-            <h3>Calculator with GUI</h3>
-            <img src="images/Calculator.png" alt="Screenshot of Calculator GUI project" width="300">
-            <a href="https://github.com/Barndalion/Calculator-GUI" target="_blank">View on GitHub</a>
-            <p>A Python calculator with a GUI built using Tkinter. Includes both scientific and regular modes.</p>
-        </div>
-        
-         <div class="project">
-            <h3>IoT Automatic Watering System</h3>
-            <img src="images/IoT.jpg" alt="Image of Device" width="300">
-            <a href="https://www.instagram.com/p/DPRiALMjnMu/?img_index=2" target="_blank">View on Instagram</a>
-            <p>A IoT device built using an arduino to detect when soil moisture falls below a threshold and pumps water.</p>
-        </div>
-    </div>
-</section>
+                <div class="skill-card databases">
+                    <p class="skill-card-heading">Databases</p>
+                    <div class="db"><img src="/Logos/sqlite.svg" alt="SQLite"><p>SQLite</p></div>
+                    <div class="db"><img src="/Logos/mysql.svg" alt="MySQL"><p>MySQL</p></div>
+                    <div class="db"><img src="/Logos/postgresql-logo.svg" alt="PostgreSQL"><p>PostgreSQL</p></div>
+                </div>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>View or download my latest resume below:</p>
-        <a href="https://drive.google.com/file/d/1IcDGyVDSErKVFN-ASC-eUM3D23HDHD2K/view?usp=sharing" target="_blank">📄 Download Resume</a>
+                <div class="skill-card Tools">
+                    <p class="skill-card-heading">Tools</p>
+                    <div class="tool"><img src="/Logos/linux.svg" alt="Linux"><p>Linux</p></div>
+                    <div class="tool"><img src="/Logos/github.svg" alt="GitHub"><p>GitHub</p></div>
+                    <div class="tool"><img src="/Logos/vscode.svg" alt="VS Code"><p>VS Code</p></div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out through any of the following:</p>
-        <ul>
-            <li>Email: <a href="mailto:darellbarnes450@gmail.com">darellbarnes450@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/darell-barnes-996109350/" target="_blank">linkedin.com/in/darell-barnes</a></li>
-            <li>GitHub: <a href="https://github.com/Barndalion" target="_blank">github.com/Barndalion</a></li>
-        </ul>
+    <!-- ── PROJECTS ─────────────────────────────────────────── -->
+    <section class="projects" id="projects-section">
+        <div class="section-inner">
+            <h2 class="section-title">Projects</h2>
+            <div class="project_container">
+
+                <div class="project_card">
+                    <div class="proj_images">
+                        <img src="/images/cf_ai1.png" alt="cf_ai_ideabank screenshot 1">
+                        <img src="/images/cf_ai2.png" alt="cf_ai_ideabank screenshot 2">
+                    </div>
+                    <div class="project_body">
+                        <h3 class="project_title">AI IdeaBank</h3>
+                        <p class="project_desc">An AI-powered idea management app built on Cloudflare's developer platform. Chat with an AI assistant to brainstorm, save, refine, and organise your ideas — all stored persistently per user with a live demo you can try right now.</p>
+                        <div class="project_tags">
+                            <span>Cloudflare Workers</span>
+                            <span>Workers AI</span>
+                            <span>Durable Objects</span>
+                            <span>Python</span>
+                            <span>Llama 3.1</span>
+                        </div>
+                        <details class="project_details">
+                            <summary>Key Challenges</summary>
+                            <p>Serialising Python data structures for Cloudflare's JS AI bindings, injecting live idea state into the LLM system prompt on every request to prevent hallucinated context, and building a stateless AI with reliable tool routing via structured JSON responses.</p>
+                        </details>
+                        <a class="project_link" href="https://github.com/Barndalion/cf_ai_ideabank" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <div class="proj_images">
+                        <img src="/Logos/AuthBarn.svg" alt="AuthBarn logo">
+                        <img src="/images/AuthBarn.png" alt="AuthBarn screenshot">
+                    </div>
+                    <div class="project_body">
+                        <h3 class="project_title">AuthBarn <span class="pypi-badge">PyPI</span></h3>
+                        <p class="project_desc">A published Python package providing lightweight, production-ready authentication with JWT tokens, bcrypt password hashing, role-based access control, and a MySQL backend. Designed to integrate seamlessly into any Python web framework.</p>
+                        <div class="project_tags">
+                            <span>Python</span>
+                            <span>PyJWT</span>
+                            <span>bcrypt</span>
+                            <span>MySQL</span>
+                            <span>PyPI</span>
+                        </div>
+                        <details class="project_details">
+                            <summary>Key Challenges</summary>
+                            <p>Designing a clean, reusable API that returns structured JSON responses for easy web framework integration, implementing thread-safe MySQL connection management, and packaging and publishing the module to PyPI.</p>
+                        </details>
+                        <a class="project_link" href="https://github.com/Barndalion/AuthBarn" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </div>
+                </div>
+
+                <div class="project_card">
+                    <div class="proj_images single">
+                        <img src="/images/Finance-tracker.png" alt="Finance Tracker screenshot">
+                    </div>
+                    <div class="project_body">
+                        <h3 class="project_title">Finance Tracker</h3>
+                        <p class="project_desc">A personal finance tracking web app that lets users log income and expenses, view spending breakdowns, and manage their financial data through a clean, responsive interface backed by a database.</p>
+                        <div class="project_tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>SQLite</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                        <details class="project_details">
+                            <summary>Key Challenges</summary>
+                            <p>Structuring the project with clear separation of concerns across config, utils, and app logic, handling persistent data storage with a local database, and building a functional full-stack app from scratch without a frontend framework.</p>
+                        </details>
+                        <a class="project_link" href="https://github.com/Barndalion/Finance-tracker" target="_blank" rel="noopener">View on GitHub ↗</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="projects-footer">
+                <a href="https://github.com/Barndalion" target="_blank" rel="noopener">View All Projects on GitHub ↗</a>
+            </div>
+        </div>
     </section>
 
+    <!-- ── EXPERIENCE ─────────────────────────────────────────── -->
+    <section class="experience" id="experience">
+        <div class="section-inner">
+
+            <!-- Programs (timeline) -->
+            <h2 class="section-title">Programs &amp; Experience</h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>Mastercard × AUC Data Science Initiative</h3>
+                                <p class="experience_date">Oct 2025 – Nov 2025</p>
+                            </div>
+                            <span class="exp-chevron">▾</span>
+                        </button>
+                        <div class="exp-body" hidden>
+                            <ul>
+                                <li>Led a 4-person team in a forecasting competition focused on identifying economic growth opportunities across geographic tracts.</li>
+                                <li>Developed an end-to-end data pipeline in Python covering data preprocessing, feature engineering, regression modeling, and evaluation at tract-level granularity.</li>
+                                <li>Presented model-driven findings and recommended optimal target tracts to competition organizers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>CERPI Student Research Internship</h3>
+                                <p class="experience_date">Nov 2025 – Present</p>
+                            </div>
+                            <span class="exp-chevron">▾</span>
+                        </button>
+                        <div class="exp-body" hidden>
+                            <ul>
+                                <li>Selected as an undergraduate research intern for a faculty-led project funded by a SCICU research grant on AI-guided bacteriophage design.</li>
+                                <li>Supporting computational evaluation of AI-generated bacteriophage sequences, analyzing biological validity, stability, and feasibility before experimental validation.</li>
+                                <li>Contributing to research aimed at assessing whether AI-assisted biological design can improve efficiency in developing phage-based therapies for antibiotic resistance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>Harvard Aspire Program</h3>
+                                <p class="experience_date">Feb 2026 – Apr 2026</p>
+                            </div>
+                            <span class="exp-chevron">▾</span>
+                        </button>
+                        <div class="exp-body" hidden>
+                            <ul>
+                                <li>Selected for a competitive global leadership program focused on ethical leadership, career development, and social impact.</li>
+                                <li>Completed structured training in problem solving, professional communication, and leadership decision-making.</li>
+                                <li>Collaborated with an international cohort to analyze real-world societal and professional challenges.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>CodePath TIP102</h3>
+                                <p class="experience_date">Mar 2026 – May 2026</p>
+                            </div>
+                            <span class="exp-chevron">▾</span>
+                        </button>
+                        <div class="exp-body" hidden>
+                            <ul>
+                                <li>Completed CodePath TIP 102, strengthening problem-solving skills through practice with intermediate data structures, algorithms, and technical interview questions.</li>
+                                <li>Applied algorithmic techniques including recursion, hash maps, trees, and graph traversal to solve coding challenges with attention to time and space complexity.</li>
+                                <li>Collaborated with peers during technical discussions and mock interview exercises, improving communication of problem-solving approaches.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>Our HBCU Matters</h3>
+                                <p class="experience_date">May 2026 – Present</p>
+                            </div>
+                            <span class="exp-chevron status-ongoing">Ongoing</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="experience_card">
+                        <button class="exp-toggle" aria-expanded="false">
+                            <div class="exp-header">
+                                <h3>SGX3 Coding Institute</h3>
+                                <p class="experience_date">Jun 2026 – Present</p>
+                            </div>
+                            <span class="exp-chevron status-ongoing">Ongoing</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div><!-- /timeline -->
+
+            <!-- ── LEADERSHIP (FULLY EXPANDED) ─────────────────────────── -->
+            <h2 class="section-title section-title--gap">Leadership &amp; Extracurricular</h2>
+            <div class="leadership-grid">
+
+                <div class="leadership_card expanded-card">
+                    <div class="exp-header-static">
+                        <h3>VU CTRL Tech Club — President</h3>
+                        <p class="experience_date">Sep 2025 – Present</p>
+                    </div>
+                    <div class="exp-body-static">
+                        <ul>
+                            <li>Directed student engineering initiatives focused on applied software development and project-based technical execution.</li>
+                            <li>Built and deployed an internal inventory management system to track and manage club resources and executive operations.</li>
+                            <li>Structured and led hands-on development sessions, guiding members through building functional software projects from design to implementation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="leadership_card expanded-card">
+                    <div class="exp-header-static">
+                        <h3>Pre-Alumni Council — Parliamentarian</h3>
+                        <p class="experience_date">Apr 2026 – Present</p>
+                    </div>
+                    <div class="exp-body-static">
+                        <ul>
+                            <li>Advised council leadership on parliamentary procedure and meeting protocols to help ensure orderly and effective meetings.</li>
+                            <li>Maintained adherence to organizational bylaws, rules, and established procedures during council discussions and decision-making processes.</li>
+                            <li>Supported collaboration among council members by promoting structured discussion, fair participation, and professional conduct during meetings.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ── CERTIFICATIONS (FULL FRAME) ─────────────────────────── -->
+            <h2 class="section-title section-title--gap">Certifications</h2>
+            <div class="certs-grid">
+
+                <div class="cert-card experience_card">
+                    <h3>Harvard Aspire Certificate</h3>
+                    <div class="cert-embed-wrapper">
+                        <a href="/Certifications/aspire.png" class="cert-link">
+                            <img src="/Certifications/aspire.png" alt="Harvard Aspire Certificate" class="full-cert-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card experience_card">
+                    <h3>Google AI Certificate</h3>
+                    <div class="cert-embed-wrapper">
+                        <a href="/Certifications/google.png" class="cert-link">
+                            <img src="/Certifications/google.png" alt="Google AI Certificate" class="full-cert-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card experience_card">
+                    <h3>Kaggle Python Certificate</h3>
+                    <div class="cert-embed-wrapper">
+                        <a href="/Certifications/kaggle.png" class="cert-link">
+                            <img src="/Certifications/kaggle.png" alt="Kaggle Python Certificate" class="full-cert-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cert-card experience_card">
+                    <h3>CodePath TIP102 Certificate</h3>
+                    <div class="cert-embed-wrapper">
+                        <a href="/Certifications/codepath.png" class="cert-link">
+                            <img src="/Certifications/codepath.png" alt="CodePath TIP102 Certificate" class="full-cert-img">
+                        </a>
+                    </div>
+                </div>
+
+                <div id="lightboxModal" class="lightbox">
+                    <span class="lightbox-close">&times;</span>
+                    <img class="lightbox-content" id="lightboxImg" alt="Enlarged certificate">
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── RESUME ─────────────────────────────────────────── -->
+    <section class="resume" id="resume">
+        <div class="section-inner">
+            <h2 class="section-title">Resume</h2>
+            <iframe src="/objects/Darell_Barnes_Official_Resume.pdf#toolbar=0&navpanes=0" title="Darell Barnes Resume"></iframe>
+            <a class="btn-primary" href="/objects/Darell_Barnes_Official_Resume.pdf" download>Download Resume</a>
+        </div>
+    </section>
+
+    <!-- ── CONTACT ─────────────────────────────────────────── -->
+    <section class="contact" id="contact">
+        <div class="section-inner">
+            <h2 class="section-title">Get In Touch</h2>
+            <p>I'm always interested in connecting with fellow developers, recruiters, and professionals in the technology industry. Feel free to reach out if you'd like to discuss software engineering, projects, internships, or potential opportunities.</p>
+            <div class="contact-links">
+                <a href="mailto:darellbarnes450@gmail.com">✉ Email</a>
+                <a href="https://github.com/Barndalion" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="https://www.linkedin.com/in/darell-barnes-996109350/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ─────────────────────────────────────────── -->
     <footer>
-        <p>&copy; 2025 Darell Barnes. All Rights Reserved.</p>
-        <p>
-            <a href="mailto:darellbarnes450@gmail.com">Email</a> | 
-            <a href="https://www.linkedin.com/in/darell-barnes-996109350/" target="_blank">LinkedIn</a> | 
-            <a href="https://github.com/Barndalion" target="_blank">GitHub</a>
-        </p>
+        <div class="footer-inner">
+            <div class="footer-links">
+                <a href="https://github.com/Barndalion" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/darell-barnes-996109350/" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="mailto:darellbarnes450@gmail.com">Email</a>
+            </div>
+            <p>&copy; 2026 Darell Barnes. All Rights Reserved.</p>
+        </div>
     </footer>
+
+   <!-- ── EXPAND / COLLAPSE & LIGHTBOX SCRIPT ─────────────────────────── -->
+    <!-- ── EXPAND / COLLAPSE & LIGHTBOX SCRIPT ─────────────────────────── -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Timeline Toggle Logic
+            document.querySelectorAll('.exp-toggle').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.experience_card, .leadership_card');
+                    if (!card) return;
+                    
+                    const body = card.querySelector('.exp-body');
+                    const chevron = btn.querySelector('.exp-chevron');
+                    const expanded = btn.getAttribute('aria-expanded') === 'true';
+
+                    btn.setAttribute('aria-expanded', String(!expanded));
+                    if (body) {
+                        body.hidden = expanded;
+                    }
+                    if (chevron && !chevron.classList.contains('status-ongoing')) {
+                        chevron.textContent = expanded ? '▾' : '▴';
+                    }
+                });
+            });
+
+            // 2. Safe Lightbox Modal Logic
+            const lightbox = document.getElementById('lightboxModal');
+            const lightboxImg = document.getElementById('lightboxImg');
+            const closeBtn = document.querySelector('.lightbox-close');
+
+            // Only run the lightbox event listeners if the elements actually exist in the HTML
+            if (lightbox && lightboxImg) {
+                
+                document.querySelectorAll('.cert-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        lightbox.style.display = "block";
+                        setTimeout(() => lightbox.classList.add('active'), 10);
+                        lightboxImg.src = this.href;
+                    });
+                });
+
+                // Helper function to safely close
+                const closeLightbox = () => {
+                    lightbox.classList.remove('active');
+                    lightbox.style.display = "none";
+                };
+
+                // Close with 'X' button if it exists
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', closeLightbox);
+                }
+
+                // Close when clicking background mask
+                lightbox.addEventListener('click', function(e) {
+                    if (e.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+
+                // Close when hitting Escape key
+                window.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape' && lightbox.style.display === "block") {
+                        closeLightbox();
+                    }
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
